@@ -1,0 +1,31 @@
+{
+  "name": "chess-puzzles",
+  "version": "0.1.0",
+  "description": "Solve Lichess and chess.com puzzles in a pane while Claude works.",
+  "author": {
+    "name": "Mathias Bradiceanu"
+  },
+  "repository": "https://github.com/Snouzy/chess-puzzles",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "source": {
+      "type": "string",
+      "title": "Source",
+      "description": "lichess or chesscom; /puzzle <source> overrides it",
+      "default": "lichess"
+    },
+    "pieces": {
+      "type": "string",
+      "title": "Pieces",
+      "description": "symbols (♞) or letters (N), for fonts that draw the symbols badly",
+      "default": "symbols"
+    },
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "fr, en, or auto (from LANG)",
+      "default": "auto"
+    }
+  }
+}
